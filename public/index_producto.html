@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f8f8f8;
+        }
+        header {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .register-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .register-button:hover {
+            background-color: #218838;
+        }
+        .product-container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            max-width: 300px;
+            margin-top: 50px;
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        select {
+            padding: 8px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            display: block;
+            margin: 15px auto 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/public/index.html" class="register-button">Registrarse</a>
+    </header>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/617K57KiNWL._AC_SX679_.jpg" alt="Camiseta Art the Clown">
+        </div>
+        <h2>Camiseta Art the Clown</h2>
+        <p>Precio: 19.99€</p>
+        <label for="talla">Elige tu talla:</label>
+        <select id="talla">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <button>Comprar</button>
+    </div>
+</body>
+</html>
